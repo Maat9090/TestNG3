@@ -2,25 +2,21 @@ import org.testng.annotations.Test;
 
 public class FirstTestCase {
 
-    @Test
-
-    void setup(){
+    @Test(priority = 1)
+    void setup() {
         System.out.println(" Opening browser. ");
     }
 
-    @Test
-    void login(){
+    @Test(priority = 2)
+    void login() {
         System.out.println("This is login test.");
     }
 
-    @Test
-    void teardown(){
+    @Test(priority = 3)
+    void teardown() {
         System.out.println("Closing browser.");
 
     }
-
-
-
 
 
 }
